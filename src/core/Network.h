@@ -11,5 +11,4 @@ class Network {
 
 };
 
-
 #endif //CPPCCNN_NETWORK_H
