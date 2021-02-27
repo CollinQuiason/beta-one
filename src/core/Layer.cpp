@@ -13,11 +13,17 @@ Layer &Layer::setNeurons(const vector<Neuron> &neurons) {
     return *this;
 }
 
-bool Layer::isHidden1() const {
-    return isHidden;
+bool Layer::isHidden() const {
+    return hidden;
 }
 
 Layer &Layer::setIsHidden(bool isHidden) {
-    Layer::isHidden = isHidden;
+    Layer::hidden = isHidden;
     return *this;
+}
+
+Layer::Layer() {}
+
+Layer::Layer(vector<Neuron> &neurons) {
+    Layer::neurons = neurons;
 }

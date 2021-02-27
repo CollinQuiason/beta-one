@@ -10,10 +10,14 @@
 
 class Layer {
 private:
-    bool isHidden;
+    Layer(vector<Neuron> &neurons);
+
+    bool hidden;
     vector<Neuron> neurons;
 public:
-    [[nodiscard]] bool isHidden1() const;
+    Layer();
+
+    [[nodiscard]] bool isHidden() const;
 
     Layer &setIsHidden(bool isHidden);
 
